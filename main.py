@@ -12,8 +12,12 @@ def simple_iteration(x0, epsilon):
         xn = phi(xn_1)
         iters += 1
 
-    return xn_1, iters
+    print("Ответ:", xn)
+    print("Кол-во итераций:", iters)
+    return xn, iters
 
+x0 = 0.0
+epsilon = 10 ** -29
 
-print(simple_iteration(0.0, 10 ** -29))
+simple_iteration(x0, epsilon)
 
